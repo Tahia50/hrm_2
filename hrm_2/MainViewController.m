@@ -12,11 +12,17 @@
 
 @end
 
+
 @implementation MainViewController
+@synthesize depList;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"I am Here");
+    depList=@[@"Human Resource",@"Operational Team",@"Marketing",@"Development and Research"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +39,32 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+            return [depList count];
+
+
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"Cell";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+
+    cell.textLabel.text=[depList objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
+
+
+
+
 
 @end

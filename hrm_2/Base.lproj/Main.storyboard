@@ -32,17 +32,21 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Wn6-LW-Ybh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Wn6-LW-Ybh">
                                         <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wn6-LW-Ybh" id="m3X-Vp-KJS">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mHA-e7-ouq" id="o53-tM-gJX"/>
+                                    <outlet property="delegate" destination="mHA-e7-ouq" id="oyl-fp-QpW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -54,9 +58,12 @@
                             <constraint firstItem="xM9-E6-vwN" firstAttribute="leading" secondItem="ySd-L1-qAP" secondAttribute="leadingMargin" constant="-20" id="zdp-sK-BGP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc"/>
+                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RFX-Zv-Vs8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="3Je-4Z-KKj" id="4Gy-fq-bLc"/>
+                        <outlet property="tableView" destination="xM9-E6-vwN" id="JnW-N5-fa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWM-ya-rOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
