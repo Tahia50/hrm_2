@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (strong,nonatomic) NSArray *theDummyArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

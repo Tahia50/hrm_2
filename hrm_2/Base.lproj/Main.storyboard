@@ -43,6 +43,10 @@
                                         <animations/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mHA-e7-ouq" id="eQx-j6-aoW"/>
+                                    <outlet property="delegate" destination="mHA-e7-ouq" id="Yz7-QI-ICB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -54,9 +58,12 @@
                             <constraint firstItem="xM9-E6-vwN" firstAttribute="leading" secondItem="ySd-L1-qAP" secondAttribute="leadingMargin" constant="-20" id="zdp-sK-BGP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc"/>
+                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dfD-sh-NcT"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="3Je-4Z-KKj" id="4Gy-fq-bLc"/>
+                        <outlet property="tableView" destination="xM9-E6-vwN" id="tvs-ES-Z3W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWM-ya-rOz" userLabel="First Responder" sceneMemberID="firstResponder"/>

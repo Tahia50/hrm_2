@@ -23,6 +23,7 @@
 		36EA140C1C0C43F900D6FAAE /* hrm_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EA140B1C0C43F900D6FAAE /* hrm_2Tests.m */; };
 		36EA14171C0C43F900D6FAAE /* hrm_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EA14161C0C43F900D6FAAE /* hrm_2UITests.m */; };
 		65AEE1E051821317C2B738A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FBE339EB2264F2F8C75B42 /* libPods.a */; };
+		CFF01F1B1C103E7A00F2BAA4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF01F1A1C103E7A00F2BAA4 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		36EA14161C0C43F900D6FAAE /* hrm_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hrm_2UITests.m; sourceTree = "<group>"; };
 		36EA14181C0C43F900D6FAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B759598790C3D70B93DC32C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CFF01F191C103E7A00F2BAA4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CFF01F1A1C103E7A00F2BAA4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D01D2CB1D3FB3DD34B93B3F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4FBE339EB2264F2F8C75B42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,6 +171,7 @@
 		36EA13F01C0C43F900D6FAAE /* hrm_2 */ = {
 			isa = PBXGroup;
 			children = (
+				CFF01F181C103E6600F2BAA4 /* Controllers */,
 				366BC2AB1C0EF6C5003A89E1 /* Employee */,
 				366BC2A71C0EF6B7003A89E1 /* Designation */,
 				366BC2A31C0EF6AC003A89E1 /* Departmant */,
@@ -217,6 +221,15 @@
 				D01D2CB1D3FB3DD34B93B3F3 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFF01F181C103E6600F2BAA4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF01F191C103E7A00F2BAA4 /* MainViewController.h */,
+				CFF01F1A1C103E7A00F2BAA4 /* MainViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		FF75FACE52B6A761080FDE69 /* Frameworks */ = {
@@ -412,6 +425,7 @@
 				366BC2A11C0EF6A3003A89E1 /* Designation+CoreDataProperties.m in Sources */,
 				36EA13F61C0C43F900D6FAAE /* AppDelegate.m in Sources */,
 				366BC2A01C0EF6A3003A89E1 /* Department+CoreDataProperties.m in Sources */,
+				CFF01F1B1C103E7A00F2BAA4 /* MainViewController.m in Sources */,
 				366BC2A21C0EF6A3003A89E1 /* Employee+CoreDataProperties.m in Sources */,
 				3633D6B71C0D9B8500F4763A /* DataModel.xcdatamodeld in Sources */,
 				366BC2AA1C0EF6B7003A89E1 /* Designation.m in Sources */,

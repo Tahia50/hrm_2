@@ -15,8 +15,10 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+[super viewDidLoad];
+// Do any additional setup after loading the view.
+self.theDummyArray =@[@"One",@"Two",@"Three",@"Four",@"Five",@"Six",@"Seven",@"Eight",@"Nine",@"Ten"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +35,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
+return [self.theDummyArray count];
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+static NSString *simpleTableIdentifier = @"Cell";
+UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+if (cell == nil) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+}
+cell.textLabel.text=[self.theDummyArray objectAtIndex:indexPath.row];
+return cell;
+
+}
+
 
 @end
