@@ -2,12 +2,14 @@
 //  Designation.h
 //  
 //
-//  Created by Kazi Sharmin Dina on 12/1/15.
+//  Created by Tahia Ata on 12/3/15.
 //
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
+@class Employee;
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -2,7 +2,7 @@
 //  Designation+CoreDataProperties.h
 //  
 //
-//  Created by Kazi Sharmin Dina on 12/1/15.
+//  Created by Tahia Ata on 12/3/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,8 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Designation (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSNumber *designation_id;
 @property (nullable, nonatomic, retain) NSString *designationName;
+@property (nullable, nonatomic, retain) NSSet<Employee *> *employeeOfDesignationType;
+
+@end
+
+@interface Designation (CoreDataGeneratedAccessors)
+
+- (void)addEmployeeOfDesignationTypeObject:(Employee *)value;
+- (void)removeEmployeeOfDesignationTypeObject:(Employee *)value;
+- (void)addEmployeeOfDesignationType:(NSSet<Employee *> *)values;
+- (void)removeEmployeeOfDesignationType:(NSSet<Employee *> *)values;
 
 @end
 

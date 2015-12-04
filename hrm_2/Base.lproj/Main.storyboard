@@ -54,7 +54,9 @@
                             <constraint firstItem="xM9-E6-vwN" firstAttribute="leading" secondItem="ySd-L1-qAP" secondAttribute="leadingMargin" constant="-20" id="zdp-sK-BGP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc"/>
+                    <navigationItem key="navigationItem" title="Department List" id="s2h-GG-ouc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="n4z-3x-uvX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="3Je-4Z-KKj" id="4Gy-fq-bLc"/>
                     </connections>

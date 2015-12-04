@@ -2,7 +2,7 @@
 //  Designation+CoreDataProperties.m
 //  
 //
-//  Created by Kazi Sharmin Dina on 12/1/15.
+//  Created by Tahia Ata on 12/3/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,7 +13,7 @@
 
 @implementation Designation (CoreDataProperties)
 
-@dynamic designation_id;
 @dynamic designationName;
+@dynamic employeeOfDesignationType;
 
 @end

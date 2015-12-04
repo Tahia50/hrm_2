@@ -2,11 +2,13 @@
 //  Employee.m
 //  
 //
-//  Created by Kazi Sharmin Dina on 12/1/15.
+//  Created by Tahia Ata on 12/3/15.
 //
 //
 
 #import "Employee.h"
+#import "Department.h"
+#import "Designation.h"
 
 @implementation Employee
 
