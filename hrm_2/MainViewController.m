@@ -10,6 +10,8 @@
 #import "AppDelegate.h"
 #import "Department.h"
 #import "Employee.h"
+#import "EmployeeListViewController.h"
+#import "EmployeeInfoViewController.h"
 
 @interface MainViewController ()
 
@@ -30,6 +32,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    self.searchBar.text = @"";
     [super viewWillAppear:animated];
     self.departmentArray = [self getDepartmentNames];
     [self.tableView reloadData];
@@ -141,6 +144,8 @@
         [self addingDisableOverlay];
         [self.tableView reloadData];
     } else {
+        self.tableView.allowsSelection = YES;
+        self.tableView.scrollEnabled = YES;
         [self.disableViewOverlay removeFromSuperview];
          self.isFiltered = YES;
         AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
@@ -159,5 +164,22 @@
     }
     [self.tableView reloadData];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.disableViewOverlay removeFromSuperview];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (self.isFiltered) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"EmployeeList" bundle:nil];
+        EmployeeInfoViewController *initialView = [storyboard instantiateViewControllerWithIdentifier: @"EmployeeView"];
+        initialView.showName = cell.textLabel.text;
+        [self.navigationController pushViewController:initialView animated:YES];
+    } else {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"EmployeeList" bundle:nil];
+        EmployeeListViewController *initialView = [storyboard instantiateViewControllerWithIdentifier: @"EmployeeList"];
+        initialView.departmentName = cell.textLabel.text;
+        [self.navigationController pushViewController:initialView animated:YES];
+    }
+}
+
 
 @end

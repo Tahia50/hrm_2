@@ -81,7 +81,6 @@
     fetchRequest.fetchBatchSize = 30;
     fetchRequest.fetchLimit = 3000;
     [fetchRequest setReturnsObjectsAsFaults:NO];
-    self.departmentName = @"HR";
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"departmentOfEmployee.departmantName == %@",self.departmentName];
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name"
                                                                      ascending:YES
@@ -98,10 +97,6 @@
     }
     //NSLog(@"%@", employeeName);
     return employeeName;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"infoViewPage" sender:self.employeeTableView];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
