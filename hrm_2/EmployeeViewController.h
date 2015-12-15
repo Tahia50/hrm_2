@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pvDesignation;
 @property (weak, nonatomic) IBOutlet UITextField *txtPhone;
 @property (weak, nonatomic) IBOutlet UISwitch *sActive;
+@property (strong, nonatomic) NSString *nameTxt;
 - (IBAction)btnSaveEmployee:(id)sender;
 - (IBAction)btnReset:(id)sender;
 

@@ -40,7 +40,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="pdx-IR-7sP" kind="show" id="lRx-ZE-Adh"/>
+                                            <segue destination="pdx-IR-7sP" kind="show" identifier="infoViewPage" id="lRx-ZE-Adh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -181,18 +181,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF6-IK-IXH">
-                                <rect key="frame" x="217" y="151" width="363" height="35"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="363" id="2IW-Vz-lTF"/>
-                                    <constraint firstAttribute="height" constant="35" id="kiV-xp-HT8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ic-IZ-YIT">
                                 <rect key="frame" x="217" y="237" width="363" height="35"/>
                                 <animations/>
@@ -252,6 +240,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF6-IK-IXH">
+                                <rect key="frame" x="217" y="151" width="363" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="363" id="2IW-Vz-lTF"/>
+                                    <constraint firstAttribute="height" constant="35" id="kiV-xp-HT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -300,6 +300,15 @@
                             <constraint firstItem="IEl-ij-Fvt" firstAttribute="leading" secondItem="Nbt-HJ-ekh" secondAttribute="leading" id="zc3-Tu-0sX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelOfBirthday" destination="NF6-IK-IXH" id="BUN-Al-75R"/>
+                        <outlet property="labelOfDepartment" destination="IEl-ij-Fvt" id="kX8-NY-Df4"/>
+                        <outlet property="labelOfDesignation" destination="1ic-IZ-YIT" id="5OW-4G-ppj"/>
+                        <outlet property="labelOfName" destination="X34-ZY-d43" id="GGV-hE-lDu"/>
+                        <outlet property="labelOfPhone" destination="Pf7-t8-09K" id="FSN-Mu-EWg"/>
+                        <outlet property="labelOfPlace" destination="hKa-S7-0xx" id="V0M-zo-wtK"/>
+                        <outlet property="labelOfStatus" destination="Nbt-HJ-ekh" id="yZ4-kq-Jrb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pho-x1-99c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

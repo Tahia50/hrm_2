@@ -10,6 +10,18 @@
 
 @interface EmployeeInfoViewController : UIViewController
 
+@property (strong, nonatomic) NSString *showName;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfName;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfPlace;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfBirthday;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfPhone;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfDesignation;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfStatus;
+@property (strong, nonatomic) IBOutlet UILabel *labelOfDepartment;
+
+
+
+
 - (IBAction)dismiss:(id)sender;
 
 @end
