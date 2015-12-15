@@ -21,6 +21,7 @@
 @end
 
 @implementation EmployeeViewController
+@synthesize scrollview;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +33,15 @@
     self.pvDesignation.dataSource = self;
     self.pvDesignation.delegate = self;
     //[self viewEmployeeInfo:@"kazi sharmin Dina"];
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGPoint scrolPoint = CGPointMake(0, textField.frame.origin.y);
+    [scrollview setContentOffset:scrolPoint animated:YES];
+}
+
+-(void)textFieldDidEndEditing:textField {
+    [scrollview setContentOffset:CGPointZero animated:YES];
 }
 
 - (NSArray *)getDepartmentNames {

@@ -117,6 +117,9 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nZ8-UQ-zoC" id="LXC-tn-4zq"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-qF-0Jv">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -130,6 +133,9 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nZ8-UQ-zoC" id="Lly-IO-Y0E"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YV-i3-RtQ">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -202,6 +208,9 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nZ8-UQ-zoC" id="5tP-Pb-iBr"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJC-ue-KwY">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -266,6 +275,9 @@
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="28" y="90" width="263" height="30"/>
                                         </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="nZ8-UQ-zoC" id="oL3-eX-jGQ"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <animations/>
@@ -509,6 +521,9 @@
                                         <include reference="gVJ-XO-4Vx"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="nZ8-UQ-zoC" id="mLC-g6-hQb"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <animations/>
